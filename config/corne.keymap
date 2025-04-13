@@ -85,6 +85,11 @@
             bindings = <&kp PIPE>;
             key-positions = <17 18>;
         };
+
+        ToggleGaming {
+            bindings = <&tog 4>;
+            key-positions = <0 11>;
+        };
     };
 
     keymap {
@@ -123,6 +128,15 @@
 &bl BL_TOG  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(331,90,48)  &trans      &trans      &trans      &trans             &trans           &trans
 &trans      &trans           &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(0,0,100)    &trans      &trans      &trans      &trans             &trans           &trans
                                               &trans           &trans           &trans                            &trans      &trans      &trans
+            >;
+        };
+
+        Games {
+            bindings = <
+&trans          &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &kp SPACE  &trans  &trans  &trans  &trans
             >;
         };
     };
