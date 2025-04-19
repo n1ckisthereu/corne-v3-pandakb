@@ -133,10 +133,10 @@
 
         Games {
             bindings = <
-&trans          &trans  &trans  &trans        &trans     &trans  &trans  &trans  &trans                  &trans  &trans  &trans
-&trans          &trans  &trans  &trans        &trans     &trans  &trans  &trans  &trans                  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans        &trans     &trans  &trans  &trans  &trans                  &trans  &trans  &trans
-                                &kp LEFT_ALT  &kp SPACE  &mo 1   &trans  &trans  &mt RIGHT_ALT LEFT_WIN
+&trans          &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans                  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans                  &trans  &trans  &trans
+                                &mo 1   &kp SPACE  &kp LEFT_ALT  &trans  &trans  &mt RIGHT_ALT LEFT_WIN
             >;
         };
     };
