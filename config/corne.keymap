@@ -87,8 +87,22 @@
         };
 
         ToggleGaming {
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <0 11>;
+        };
+
+        key_utils {
+            bindings = <&tog 4>;
+            key-positions = <12 23>;
+        };
+    };
+
+    macros {
+        alt_1: alt_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "ALT_1";
         };
     };
 
@@ -119,6 +133,15 @@
 &trans   &kp PG_UP  &trans     &trans      &kp END      &kp HOME         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &kp F12
 &trans   &kp PG_DN  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp PRINTSCREEN  &trans          &trans          &trans        &trans           &trans   &trans
                                &trans      &trans       &trans           &trans          &trans          &trans
+            >;
+        };
+
+        macros_wms {
+            bindings = <
+&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(NUMBER_5)  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(NUMBER_6)  &kp LA(NUMBER_7)  &kp LA(NUMBER_8)  &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans            &trans            &trans            &trans  &trans  &trans
             >;
         };
 
