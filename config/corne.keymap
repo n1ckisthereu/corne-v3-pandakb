@@ -95,6 +95,11 @@
             bindings = <&tog 4>;
             key-positions = <12 23>;
         };
+
+        dota {
+            bindings = <&tog 6>;
+            key-positions = <24 35>;
+        };
     };
 
     macros {
@@ -160,6 +165,15 @@
 &trans          &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans                  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans                  &trans  &trans  &trans
                                 &mo 1   &kp SPACE  &kp LEFT_ALT  &trans  &trans  &mt RIGHT_ALT LEFT_WIN
+            >;
+        };
+
+        dota {
+            bindings = <
+&trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &lt 2 EXCLAMATION  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
