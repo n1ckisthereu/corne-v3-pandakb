@@ -35,13 +35,6 @@
             global-quick-tap;
             quick-tap-ms = <400>;
         };
-
-        togdance: togdance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TOGDANCE";
-            #binding-cells = <0>;
-            bindings = <&kp RETURN>, <&kp RETURN>, <&tog 3>;
-        };
     };
 
     combos {
@@ -107,6 +100,11 @@
             bindings = <&tog 6>;
             key-positions = <24 35>;
         };
+
+        toggle_colemak {
+            bindings = <&tog 3>;
+            key-positions = <0 1 11 10>;
+        };
     };
 
     macros {
@@ -123,10 +121,10 @@
 
         root {
             bindings = <
-&kp TAB                  &kp Q  &kp W  &kp E         &kp R        &kp T         &kp Y      &kp U        &kp I          &kp O    &kp P          &kp BSPC
-&kp LCTRL                &kp A  &kp S  &kp D         &kp F        &kp G         &kp H      &kp J        &kp K          &kp L    &kp SEMICOLON  &kp SQT
-&mt LEFT_SHIFT CAPSLOCK  &kp Z  &kp X  &kp C         &kp V        &kp B         &kp N      &kp M        &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                                       &kp LEFT_GUI  &lt 1 SPACE  &kp LEFT_ALT  &togdance  &lt 2 SPACE  &kp RIGHT_ALT
+&kp TAB                  &kp Q  &kp W  &kp E         &kp R        &kp T         &kp Y    &kp U        &kp I          &kp O    &kp P          &kp BSPC
+&kp LCTRL                &kp A  &kp S  &kp D         &kp F        &kp G         &kp H    &kp J        &kp K          &kp L    &kp SEMICOLON  &kp SQT
+&mt LEFT_SHIFT CAPSLOCK  &kp Z  &kp X  &kp C         &kp V        &kp B         &kp N    &kp M        &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                                       &kp LEFT_GUI  &lt 1 SPACE  &kp LEFT_ALT  &kp RET  &lt 2 SPACE  &kp RIGHT_ALT
             >;
         };
 
