@@ -34,13 +34,6 @@
             global-quick-tap;
             quick-tap-ms = <400>;
         };
-
-        two_layers: two_layers {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TWO_LAYERS";
-            #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 3>;
-        };
     };
 
     combos {
@@ -153,10 +146,10 @@
 
         games {
             bindings = <
-&trans          &trans  &trans  &trans       &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans       &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans       &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                &two_layers  &kp SPACE  &kp LEFT_ALT  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                &mo 2   &kp SPACE  &kp LEFT_ALT  &trans  &trans  &trans
             >;
         };
     };
