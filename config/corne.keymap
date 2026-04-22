@@ -90,8 +90,8 @@
             key-positions = <11 0>;
         };
 
-        change_to_colemak {
-            bindings = <&to 1>;
+        toggle_colemak {
+            bindings = <&tog 1>;
             key-positions = <0 1 10 11>;
         };
     };
