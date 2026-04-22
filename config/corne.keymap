@@ -118,10 +118,10 @@
 
         colemak {
             bindings = <
-&trans  &kp Q  &kp W  &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
-&trans  &kp A  &kp R  &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I       &kp O          &kp SINGLE_QUOTE
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp PERIOD  &kp FSLH       &trans
-                      &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB                  &kp Q  &kp W  &kp F         &kp P        &kp G         &kp J    &kp L        &kp U          &kp Y       &kp SEMICOLON  &kp BACKSPACE
+&kp LEFT_CONTROL         &kp A  &kp R  &kp S         &kp T        &kp D         &kp H    &kp N        &kp E          &kp I       &kp O          &kp SINGLE_QUOTE
+&mt LEFT_SHIFT CAPSLOCK  &kp Z  &kp X  &kp C         &kp V        &kp B         &kp K    &kp M        &kp COMMA      &kp PERIOD  &kp FSLH       &kp RIGHT_SHIFT
+                                       &kp LEFT_GUI  &lt 2 SPACE  &kp LEFT_ALT  &kp RET  &lt 3 SPACE  &kp RIGHT_ALT
             >;
         };
 
