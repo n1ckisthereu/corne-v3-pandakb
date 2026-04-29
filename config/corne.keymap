@@ -117,21 +117,21 @@
             >;
         };
 
-        extra {
-            bindings = <
-&kp PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &trans  &trans
-&trans           &kp F5  &kp F6   &kp F7   &kp F8   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans           &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans          &trans          &trans        &trans           &trans  &trans
-                                  &trans   &trans   &trans  &trans          &trans          &trans
-            >;
-        };
-
         numbers_symbols {
             bindings = <
 &kp ESCAPE        &kp EXCL      &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
 &kp LEFT_CONTROL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp MINUS       &kp EQUAL      &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH
 &kp RIGHT_SHIFT   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp UNDERSCORE  &kp PLUS       &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
                                               &trans        &trans        &trans        &trans          &trans         &trans
+            >;
+        };
+
+        extra {
+            bindings = <
+&kp PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &trans  &trans
+&trans           &kp F5  &kp F6   &kp F7   &kp F8   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans           &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans          &trans          &trans        &trans           &trans  &trans
+                                  &trans   &trans   &trans  &trans          &trans          &trans
             >;
         };
 
@@ -149,7 +149,7 @@
 &trans          &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                &mo 3   &kp SPACE  &kp LEFT_ALT  &trans  &trans  &trans
+                                &mo 2   &kp SPACE  &kp LEFT_ALT  &trans  &trans  &trans
             >;
         };
     };
@@ -158,7 +158,7 @@
         compatible = "zmk,conditional-layers";
 
         two-three {
-            if-layers = <3 2>;
+            if-layers = <2 3>;
             then-layer = <4>;
         };
     };
